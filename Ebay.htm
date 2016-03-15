@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<!-- Ebay file format, preferable to use redundant class attributes for all necessary elements -->
 <html>
     <head>
         <style type="text/css">
@@ -12,12 +14,20 @@
             padding: 5px;
            }
 
-           table {
+           div.header h1 {
+            font-size: 24px;
+           }
+
+           div.header h2 {
+            font-size: 16px;
+           }
+
+           table.models {
             border: none;
             color: white;
            }
 
-           caption {
+           table.models caption {
             caption-side: top;
             text-align: left;
             font-size: 17px;
@@ -25,20 +35,12 @@
             margin-bottom: 10px;
            }
 
-           td:first-child {
+           table.models td:first-child {
             font-weight: bold;
            }
 
-           tr:nth-child(2) > td {
+           table.models tr:nth-child(2) > td {
             padding-bottom: 10px;
-           }
-
-           h1 {
-            font-size: 24px;
-           }
-
-           h2 {
-            font-size: 16px;
            }
         </style>
     </head>
@@ -48,7 +50,7 @@
                 <h1>Kawasaki Servo Eliminator</h1> 
                 <h2>(Open Source project)</h2>
                 <hr>
-                <table>
+                <table class="models">
                     <caption>Suitable for:</caption>
                     <tr>
                         <td>ZX6R</td>
