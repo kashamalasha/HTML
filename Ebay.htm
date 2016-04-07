@@ -8,7 +8,12 @@
             font-family: sans-serif;
            } 
 
+           p span {
+            font-weight: bold;
+           }
+
            div.header {
+            position: relative;
             background-color: #003300;
             /*background-image: url("http://funkyimg.com/i/25k5T.jpg");*/
             background-image: url("./bckimg1.jpg");
@@ -48,9 +53,27 @@
             padding-bottom: 10px;
            }
 
-           p span {
-            font-weight: bold;
+           div.watchNow a {
+            position: absolute;
+            top: 3.3em;
+            right: 15px;
+            display: block;
+            width: 140px;
+            height: 36px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            line-height: 36px;
+            background: rgba(255, 255, 255, .2);
+            box-shadow: -1px 1px black,
+                        1px -1px silver;
            }
+
+           div.watchNow a:hover {
+            background: rgba(255, 255, 255, .3);
+            color: lemonchiffon;
+           }
+
         </style>
     </head>
     <body>
@@ -78,6 +101,9 @@
                         <td>2007 - till now</td>
                     </tr>
                 </table>
+                <div class="watchNow">
+                    <a href="#youtube">how it works</a>
+                </div>
             </div>
             
             <p><span>Description:</span> The Servo Eliminator is a small, lightweight solution that eliminates the need for the exhaust servo
@@ -104,11 +130,11 @@
             <p><span>About shipping:</span> Shipping will be executed with Russian post service and may take up to 20 working days for whole 
             delivery process. It will cost in most of cases something around 15-17 USD. Anyway is better ask me about fares before you make a 
             decision to buy. Thanks.</p>
-            
-            <p><span>Video:</span> This is only example of my first attempt to build this device and test it on my motorcycle. It looks not so 
-            beautiful as the device for sale, because it was just the craftwork, but anyway it works the same:</p>
 
-            <p align="left">
+            <p><span>Video:</span> This is only example of my first attempt to build this device and test it on my motorcycle. It looks not so 
+            beautiful as the device for sale, because it was just the craftwork, but anyway it works the same:</p>            
+
+            <div id="youtube">
                 <object width="640" height="385">
                     <param 
                         name="movie" 
@@ -127,7 +153,8 @@
                         width="640" 
                         height="385">
                 </object>
-            </p>
+            </div>
+
         </div>
     </body>
 </html>
